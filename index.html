@@ -202,10 +202,16 @@
         <p>Email: <a href="mailto:avdoev@yahoo.com">avdoev@yahoo.com</a></p>
     </div>
 
-    <form class="contact-form" action="send.php" method="POST">
+    <form action="https://formsubmit.co/avdoev@gmail.com" method="POST">
   <input type="text" name="name" placeholder="Имя" required>
   <input type="email" name="email" placeholder="Email" required>
   <textarea name="message" placeholder="Сообщение" required></textarea>
+
+  <!-- Дополнительные настройки -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://pcmasternice.fr/merci.html">
+
   <button type="submit" class="btn-tv">Отправить</button>
 </form>
 </section>
