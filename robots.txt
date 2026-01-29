@@ -1,0 +1,4 @@
+ser-agent: *
+Allow: /
+
+Sitemap: https://mamba146.github.io/TV-MASTER/sitemap.xml
