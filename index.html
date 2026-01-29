@@ -202,12 +202,12 @@
         <p>Email: <a href="mailto:avdoev@yahoo.com">avdoev@yahoo.com</a></p>
     </div>
 
-    <form class="contact-form">
-        <input type="text" placeholder="Имя" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Сообщение"></textarea>
-        <button type="submit" class="btn-tv">Отправить</button>
-    </form>
+    <form class="contact-form" action="send.php" method="POST">
+  <input type="text" name="name" placeholder="Имя" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="message" placeholder="Сообщение" required></textarea>
+  <button type="submit" class="btn-tv">Отправить</button>
+</form>
 </section>
 
 <!-- ===================== FOOTER ===================== -->
