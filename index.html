@@ -232,7 +232,7 @@
     </div>
 
     <div class="footer-bottom">
-        ©️ 2026 TV MASTER NICE. Все права защищены.
+        © 2026 TV MASTER NICE. Все права защищены.
     </div>
 </footer>
 
@@ -250,7 +250,7 @@ document.body.appendChild(lightbox);
 
 document.querySelectorAll('.gallery-photo').forEach(img => {
     img.addEventListener('click', () => {
-        lightbox.innerHTML = <img src="${img.src}">;
+        lightbox.innerHTML = `<img src="${img.src}">`;
         lightbox.style.display = 'flex';
     });
 });
