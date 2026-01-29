@@ -202,12 +202,25 @@
         <p>Email: <a href="mailto:avdoev@yahoo.com">avdoev@yahoo.com</a></p>
     </div>
 
-    <form action="https://formsubmit.co/d430b7bda05e6eabdfbdbd7283195d33" method="POST">
-  <input type="text" name="name" placeholder="Имя" required>
-  <input type="email" name="email" placeholder="Email" required>
-  <textarea name="message" placeholder="Сообщение" required></textarea>
+    <form class="contact-form" action="https://formsubmit.co/d430b7bda05e6eabdfbdbd7283195d33" method="POST">
 
-  <!-- Дополнительные настройки -->
+  <div class="form-group">
+    <input type="text" name="name" placeholder="Имя" required>
+  </div>
+
+  <div class="form-group">
+    <input type="email" name="email" placeholder="Email" required>
+  </div>
+
+  <div class="form-group">
+    <input type="tel" name="phone" placeholder="Телефон" required>
+  </div>
+
+  <div class="form-group">
+    <textarea name="message" placeholder="Сообщение" required></textarea>
+  </div>
+
+  <!-- FormSubmit настройки -->
   <input type="hidden" name="_captcha" value="false">
   <input type="hidden" name="_template" value="table">
   <input type="hidden" name="_next" value="https://pcmasternice.fr/merci.html">
