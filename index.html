@@ -202,28 +202,28 @@
         <h2 data-lang="contact_title">Связаться со мной</h2>
 
         <form id="contact-form" class="contact-form"
-              action="https://api.web3forms.com/submit"
+              action="https://formsubmit.co/avdoev@gmail.com"
               method="POST">
 
-            <!-- Web3Forms Access Key -->
-            <input type="hidden" name="access_key" value="4a94a7a3-a838-4de1-ac99-f9fd20d9fa80">
-
-            <!-- User fields -->
             <input type="text" name="name" placeholder="Имя" required>
             <input type="email" name="email" placeholder="Email" required>
             <input type="tel" name="phone" placeholder="Телефон" required>
             <textarea name="message" placeholder="Сообщение" required></textarea>
 
-            <!-- CORRECT redirect for GitHub Pages -->
-            <input type="hidden" name="redirect_url" value="https://mamba146.github.io/TV-MASTER/merci.html">
+            <!-- Disable captcha -->
+            <input type="hidden" name="_captcha" value="false">
 
-            <!-- Anti-spam honeypot -->
-            <input type="checkbox" name="botcheck" style="display:none;">
+            <!-- Email template -->
+            <input type="hidden" name="_template" value="table">
+
+            <!-- Redirect after success -->
+            <input type="hidden" name="_next" value="https://mamba146.github.io/TV-MASTER/merci.html">
 
             <button type="submit" class="btn" data-lang="btn_send">Отправить</button>
         </form>
     </div>
 </section>
+
 <!-- ===================== FOOTER ===================== -->
 <footer class="footer">
     <div class="footer-inner">
