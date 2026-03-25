@@ -196,38 +196,33 @@
     </div>
 </section>
 
-<!-- ===================== CONTACT ===================== -->
+<!-- ===================== CONTACT FORM ===================== -->
+
 <section id="contact" class="section contact">
-    <h2>Контакты</h2>
+    <div class="section-inner">
+        <h2 data-lang="contact_title">Связаться со мной</h2>
 
-    <div class="contact-info">
-        <p>Телефон: <a href="tel:+33631136410">+33 6 31 13 64 10</a></p>
-        <p>WhatsApp: <a href="https://wa.me/33631136410">Написать</a></p>
-        <p>Email: <a href="mailto:avdoev@yahoo.com">avdoev@yahoo.com</a></p>
-    </div>
+        <form id="contact-form" class="contact-form" 
+              action="https://api.web3forms.com/submit" 
+              method="POST">
 
-    <form class="contact-form" 
-          action="https://formspree.io/f/4a94a7a3-a838-4de1-ac99-f9fd20d9fa80" 
-          method="POST">
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="4a94a7a3-a838-4de1-ac99-f9fd20d9fa80">
 
-        <div class="form-group">
             <input type="text" name="name" placeholder="Имя" required>
-        </div>
-
-        <div class="form-group">
             <input type="email" name="email" placeholder="Email" required>
-        </div>
-
-        <div class="form-group">
             <input type="tel" name="phone" placeholder="Телефон" required>
-        </div>
-
-        <div class="form-group">
             <textarea name="message" placeholder="Сообщение" required></textarea>
-        </div>
 
-        <button type="submit" class="btn-tv">Отправить</button>
-    </form>
+            <!-- Redirect after success -->
+            <input type="hidden" name="redirect" value="https://pcmasternice.fr/merci.html">
+
+            <!-- Anti-spam honeypot -->
+            <input type="checkbox" name="botcheck" style="display:none;">
+
+            <button type="submit" class="btn" data-lang="btn_send">Отправить</button>
+        </form>
+    </div>
 </section>
 <!-- ===================== FOOTER ===================== -->
 <footer class="footer">
