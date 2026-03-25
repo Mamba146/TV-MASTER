@@ -201,25 +201,27 @@
     <div class="section-inner">
         <h2 data-lang="contact_title">Связаться со мной</h2>
 
-        <form id="contact-form" class="contact-form" 
-              action="https://api.web3forms.com/submit" 
+        <form id="contact-form" class="contact-form"
+              action="https://api.web3forms.com/submit"
               method="POST">
 
-          <input type="hidden" name="access_key" value="4a94a7a3-a838-4de1-ac99-f9fd20d9fa80">
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="4a94a7a3-a838-4de1-ac99-f9fd20d9fa80">
 
-          <input type="text" name="name" placeholder="Имя" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="tel" name="phone" placeholder="Телефон" required>
-          <textarea name="message" placeholder="Сообщение" required></textarea>
+            <!-- User fields -->
+            <input type="text" name="name" placeholder="Имя" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Телефон" required>
+            <textarea name="message" placeholder="Сообщение" required></textarea>
 
-          <!-- ВАЖНО: правильный redirect -->
-          <input type="hidden" name="redirect_url" value="https://tvmasternice.github.io/merci.html">
+            <!-- Redirect after success -->
+            <input type="hidden" name="redirect_url" value="https://tvmasternice.github.io/merci.html">
 
-         <input type="checkbox" name="botcheck" style="display:none;">
+            <!-- Anti-spam honeypot -->
+            <input type="checkbox" name="botcheck" style="display:none;">
 
-         <button type="submit" class="btn" data-lang="btn_send">Отправить</button>
-      </form>
-
+            <button type="submit" class="btn" data-lang="btn_send">Отправить</button>
+        </form>
     </div>
 </section>
 <!-- ===================== FOOTER ===================== -->
