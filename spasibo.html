@@ -4,13 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Спасибо за заявку — TV MASTER NICE</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .thanks-box {
+            text-align: center;
+            max-width: 600px;
+            background: #141414;
+            padding: 60px 40px;
+            border-radius: 16px;
+            border: 1px solid #222;
+        }
+        .thanks-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 30px;
+            background: #FFD700;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .thanks-icon svg {
+            width: 40px;
+            height: 40px;
+            stroke: #0a0a0a;
+        }
+        h1 {
+            font-size: 36px;
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #ccc;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .btn-tv {
+            display: inline-block;
+            background: #FFD700;
+            color: #0a0a0a;
+            padding: 16px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        .btn-tv:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
+        }
+        .contacts {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #222;
+        }
+        .contacts p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .contacts a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .thanks-box {
+                padding: 40px 20px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <section class="section" style="text-align: center; padding: 100px 20px;">
-        <h1>Спасибо за заявку!</h1>
-        <p>Я свяжусь с вами в ближайшее время для настройки IPTV и ТВ.</p>
-        <a href="/" class="btn-tv">Вернуться на главную</a>
-    </section>
+    <div class="thanks-box">
+        <div class="thanks-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <h1>Заявка отправлена!</h1>
+        <p>Спасибо за обращение в TV MASTER NICE.<br>Я свяжусь с вами в течение часа для уточнения деталей по настройке IPTV, Smart TV или интернета.</p>
+        <a href="/TV-MASTER/" class="btn-tv">Вернуться на главную</a>
+        
+        <div class="contacts">
+            <p>Срочный вопрос? Звоните:</p>
+            <p><a href="tel:+33631136410">+33 6 31 13 64 10</a></p>
+            <p><a href="https://wa.me/33631136410">WhatsApp</a></p>
+        </div>
+    </div>
 </body>
 </html>
