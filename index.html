@@ -31,7 +31,7 @@
         </nav>
 
         <button class="burger" id="burger" type="button">
-            <span></span><span></span><span></span>
+            <span></span><span></span>
         </button>
     </div>
 </header>
@@ -167,7 +167,6 @@
                     <h4>Андрей, Ницца</h4>
                     <div class="stars">★★★★★</div>
                 </div>
-            </div>
             <p>Очень быстро приехал, всё настроил, объяснил как пользоваться. IPTV работает идеально!</p>
         </div>
 
@@ -195,33 +194,43 @@
 
     </div>
 </section>
-<!-- ===================== CONTACT FORM ===================== -->
 
+<!-- ===================== CONTACT ===================== -->
 <section id="contact" class="section contact">
-    <div class="section-inner">
-        <h2 data-lang="contact_title">Связаться со мной</h2>
+    <h2>Контакты</h2>
 
-        <form id="contact-form" class="contact-form"
-              action="https://formsubmit.co/avdoev@gmail.com"
-              method="POST">
-
-            <input type="text" name="name" placeholder="Имя" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="tel" name="phone" placeholder="Телефон" required>
-            <textarea name="message" placeholder="Сообщение" required></textarea>
-
-            <!-- Disable captcha -->
-            <input type="hidden" name="_captcha" value="false">
-
-            <!-- Email template -->
-            <input type="hidden" name="_template" value="table">
-
-            <!-- Redirect after success -->
-            <input type="hidden" name="_next" value="https://mamba146.github.io/TV-MASTER/merci.html">
-
-            <button type="submit" class="btn" data-lang="btn_send">Отправить</button>
-        </form>
+    <div class="contact-info">
+        <p>Телефон: <a href="tel:+33631136410">+33 6 31 13 64 10</a></p>
+        <p>WhatsApp: <a href="https://wa.me/33631136410">Написать</a></p>
+        <p>Email: <a href="mailto:avdoev@yahoo.com">avdoev@yahoo.com</a></p>
     </div>
+
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="8e06e108-4e16-483a-a9f5-8b41be194f71">
+        <input type="hidden" name="subject" value="Новая заявка с TV MASTER NICE">
+        <input type="hidden" name="from_name" value="TV MASTER NICE">
+        <input type="hidden" name="redirect" value="https://mamba146.github.io/TV-MASTER/spasibo.html">
+        <input type="hidden" name="from" value="TV-MASTER-NICE">
+        <input type="checkbox" name="botcheck" style="display: none;">
+
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+        </div>
+
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div class="form-group">
+            <input type="tel" name="phone" placeholder="Телефон" required>
+        </div>
+
+        <div class="form-group">
+            <textarea name="message" placeholder="Какая услуга интересует? IPTV, Wi-Fi, Smart TV?" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-tv">Отправить заявку</button>
+    </form>
 </section>
 
 <!-- ===================== FOOTER ===================== -->
@@ -243,8 +252,6 @@
             <p>Ницца, Côte d’Azur</p>
             <p>Работаю ежедневно</p>
         </div>
-
-    </div>
 
     <div class="footer-bottom">
         © 2026 TV MASTER NICE. Все права защищены.
